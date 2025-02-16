@@ -3,11 +3,13 @@
 The script performs two main functions:
 
 - Converts a chapter file from the .pbf format (used by PotPlayer) to the ffmetadata format supported by ffmpeg.
+
 - Optionally embeds chapters into an .mp4 video file using ffmpeg.
 
 ### Requirements
 
 - Python 3 installed.
+
 - ffmpeg installed (must be available in PATH).
 
 ### Usage
@@ -19,6 +21,7 @@ To simply convert a .pbf file to ffmetadata, run the following command:
 `python convert_pbf_to_ffmetadata.py "input.pbf" "output.ffmetadata"`
 
 input.pbf — Path to the .pbf file.
+
 output.ffmetadata — Path to the output ffmetadata file.
 
 2. Convert and Embed Chapters into a Video
@@ -28,7 +31,9 @@ To convert .pbf to ffmetadata and immediately embed the chapters into a video, u
 `python convert_pbf_to_ffmetadata.py "input.pbf" "output.ffmetadata" --embed --video "video.mp4" --output "video_output.mp4"`
 
     --embed — Flag indicating that chapters should be embedded into the video.
+    
     --video — Path to the .mp4 video file.
+    
     --output — Path to the output video file.
 
 ### Examples
